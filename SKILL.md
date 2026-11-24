@@ -6,6 +6,11 @@ name: ks-harvest
 description: "快手公开数据采集（只读）：关键词搜视频、博主作品与粉丝数据、视频评论，输出 JSON，不登录不发布。触发词：快手、Kuaishou、kwai、快手搜索、快手评论、快手博主。用户要查快手视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "快手数据采集｜评论抓取·主页作品·搜视频·互动数"
+display_name_en: "Kuaishou Harvest"
+description_zh: "快手公开数据采集接口（只读）：作品详情、视频评论、博主作品与粉丝数据、关键词搜视频，批量抓取并输出原始结构化JSON，作为选题、舆情、竞品、榜单等下游分析的数据"
+description_en: "Read-only Kuaishou (Kwai) public-data skill - no login, no ban risk. Keyword video search with most-liked / newest sorting plus time and duration filters for viral topics and trend spotting; creator works monitoring via profile URL with follower and engagement stats for competitor tracking; video comment harvesting for sentiment analysis; KOL screening by real engagement ratios to spot inflated accounts. Every call returns one JSON envelope for success, empty or failure, ready for Excel/BI or AI analysis. Optional --save / GUAIKEI_ENABLE_LOG=1 logging for marketing reports. Pay-per-use tokens allow 10,000 items per call; monthly plans cap search 30, works 50, comments 60 (over-limit returns PLAN_LIMIT, exit code 1 - do not retry with same args). Never logs in, publishes, likes, comments or follows. Zero dependencies, Node.js 16.14+, no proxy in mainland China. Triggers: kuaishou search, kwai comments, creator works, viral topics, competitor monitoring, KOL screening."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "📷"
